@@ -1,0 +1,52 @@
+# AI Data Enrichment Dashboard
+
+This project is an AI-powered dashboard that enriches datasets by performing web searches and extracting specific information for each entity in a chosen column. It uses OpenAI's GPT-3.5-turbo model to parse web results based on user queries and format the extracted data in a structured output.
+
+## Features
+
+- Upload CSV files or connect to Google Sheets
+- Select primary column for entity list
+- Custom prompt input for information retrieval
+- AI-powered web search and information extraction
+- View and download enriched results
+
+## Setup
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/ai-data-enrichment.git
+   cd ai-data-enrichment
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Create a `.env.local` file in the root directory and add your OpenAI API key:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
+
+4. Run the development server:
+   ```
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the dashboard.
+
+## Usage
+
+1. Upload a CSV file or enter a Google Sheet URL.
+2. Select the primary column containing the list of entities.
+3. Enter a custom prompt for information retrieval.
+4. Click the "Search" button to start the enrichment process.
+5. View the results in the table and download them if needed.
+
+## Technologies Used
+
+- Next.js
+- React
+- OpenAI API
+- shadcn/ui components
+- CSV parsing (csv-parser)

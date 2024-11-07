@@ -1,0 +1,3 @@
+npm install csv-parser openai lucide-react
+npx shadcn@latest init
+npx shadcn@latest add button input select textarea card table
